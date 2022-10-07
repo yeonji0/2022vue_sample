@@ -3,7 +3,7 @@
     <ul class="d_Icon">
        <li v-for="item in data" :key="item">
         <a :href="item.href">
-            <img :src="`img/directs/${item.src}`" alt="">
+            <img :src="`img/${item.src}`" alt="">
             <div class="txt">
                 {{item.name}}
             </div>
