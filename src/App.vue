@@ -2,16 +2,28 @@
 
 <header-view></header-view>
 <main-visual></main-visual>
+<direct-banner v-bind:data="directData"></direct-banner>
   
 </template>
 
 <script>
 import headerView from "./components/HeaderView.vue"
 import mainVisual from "./components/mainVisual.vue"
+import DirectBanner from "./components/directBanner.vue"
+
+import directs from "./data/directs.js"
+
 export default {
   components:{
     headerView,
-    mainVisual
+    mainVisual,
+    DirectBanner,
+  },
+  data(){
+    return{
+      directData:directs
+    }
+
   }
 
 }
@@ -21,4 +33,6 @@ export default {
 *{margin: 0;padding: 0;}
 ul,li{list-style: none;}
 a:link, a:visited{text-decoration: none; color: #333;}
+.container{width: 1200px; margin: 0 auto; }
+
 </style>
