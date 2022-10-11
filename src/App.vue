@@ -3,6 +3,12 @@
 <header-view></header-view>
 <main-visual></main-visual>
 <direct-banner v-bind:data="directData"></direct-banner>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 bg-primary">test</div>
+    <div class="col-md-6 bg-info">test</div>
+  </div>
+</div>
   
 </template>
 
